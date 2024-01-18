@@ -1,0 +1,68 @@
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <title>Document</title>
+      <style>
+          .divpractice{
+              width: 100%;
+              height: 400px;
+  
+              background-color: red;
+              
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+  
+              padding: 10px;
+          }
+          .divpractice > .first{
+              width: 50%;
+              height: 150px;
+              background-color: blue;
+          }
+  
+          .divpractice > .second{
+              width: 50%;
+              height: 150px;
+              background-color: pink;
+  
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+          }
+          .divpractice > .second > button{
+              margin-right: 5px;
+              padding: 15px;
+              margin : 0px 5px 0px 0px;
+          }
+          h1{
+              color: blue;
+              
+          }
+      </style>
+      <script>
+          function hey(){
+              alert('hello');
+          }
+      </script>
+  </head>
+  <body>
+      <h1>Contoh Heading 1</h1>
+      <h2>Contoh Heading 2</h2>
+      <h3>Contoh Heading 3</h3>
+      <div class="divpractice">
+          <div class="first">
+              First Div
+          </div>
+          <div class="second" id="second-box">
+              <button onclick="hey()">Button Pertama</button>
+              <button onclick="hey()">Button Kedua</button>
+              <button onclick="hey()">Button Ketiga</button>
+          </div>
+      </div>
+  
+  </body>
